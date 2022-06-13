@@ -47,6 +47,7 @@ header{
 
 .logo{
     vertical-align: middle;
+    padding-right: 40px;
 }
 
 
@@ -59,11 +60,17 @@ header{
 
 .title{
     
-    text-align: center;
-    background-color: rgb(23, 70, 127);
+   text-align:center;
+    background-image: url("../img/becgraund.svg");
     height: 530px;
 
 }
+
+.title__title{
+padding-top:100px;
+}
+
+
 .content_buy{
     
 }
@@ -73,6 +80,24 @@ h1{
 .content_design{
    
 }
+.button{
+    color: black;
+    background-color: #fff;
+    margin-top: 20px;
+    padding:5px 55px ;
+    /* border-radius: 1%; */
+    
+}
+/*  /page 1*/
+
+.container{
+    display: flex;
+    justify-content:center;
+}
+
+.name__gallery{
+    text-align: center;
+}
 
 .text-items{
     text-align: center;
@@ -81,12 +106,17 @@ h1{
 }
 
 .content_texts{
- 
-}
+padding-top: 30px
+};
 
-.batton_read{
+.button__read{
+    padding-top: 100px;
     color: red;
     box-shadow: rgba(255, 0, 0, 0.5);
+}
+
+.content_mags{
+
 }
 @media screen {
     .content_buy, .content_design, .h1{
@@ -101,10 +131,10 @@ h1{
 
 /* img*/
 
-.container{
+.container_header{
     display:flex;
-    justify-content:center;
-    margin: 0px -5px;
+    justify-content:space-between;
+    margin:0 auto;
     
 }
 
