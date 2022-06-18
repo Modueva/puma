@@ -2,7 +2,10 @@
     font-family: "karla";
     src: url("https://github.com/googlefonts/karla");
   }
-
+html,body{
+    width: 100%;
+    height: 100%;
+}
 
 *{
     margin: 0;
@@ -126,7 +129,7 @@ h1{
     box-shadow: rgba(255, 0, 0, 0.5);
 }
 
-.content_mags{
+.content_mags1{
     text-align: center;
     font-family: 'Karla';
     font-size: 12px;
@@ -152,7 +155,7 @@ h1{
     text-align: center;
 }
 
-.content_magss{
+.content_mags2{
     font-family: 'Karla';
     font-size: 12px;
     text-align: center;
@@ -194,36 +197,79 @@ h1{
    color: #1D1F2E;
 }
 
-/* img*/
+.content_mags3{
+    font-family: 'Karla';
+font-size: 12px;
+text-transform: uppercase;
+color: #1D1F2E;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 150px;
+max-width: 100%;
+left: 0;
+right: 0;
+margin: 0 auto;
+
+}
 
 
 
 
+/* container_love*/
 .container_love{
+ 
+width: 100%;
+height: 510px;
+left: 0;
+right: 0;
+margin: 0 auto; 
+ top: 50%;
+ 
+}
+
+
+.love_bloks{
+    width: 100%;
+    height: auto;
     display: flex;
-    margin: 0px -5px;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+
 
 }
-.item_block3{
-    display:flex; 
-    height: 100%;
+
+.love_blok1 {
+    width: 40%;
+}
+.love_blok2 {
+    width: 40%;
+    
 }
 
-.gallery_item2_1{
-    height: 50%;
-}
-.img_col2{
-    height: 50%;
-}
-
-.gallery_item2_2{
-    align-self:flex-end;
-}
-.gallery_item2_3{
-    align-self:flex-start;
+.love_img{
+    display: flex;
+    padding: 0px 22.5px;
+    flex: 0 1 33.333%;
+  
 }
 
+.love_img2{
+    display: block;
+    margin: 0 auto;
+}
+
+.img_blok2{
+    margin-top: 15px;
+}
+
+.content_mags4{
+    font-family: 'Karla';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1D1F2E;
+}
 
 h2{
     font-family: 'Karla';
@@ -240,6 +286,7 @@ h2{
     color: rgba(29, 31, 46, 0.7);
 }
 
+
 .Start__Shopping{
     font-family: 'Karla';
     margin-top: 21px;
@@ -247,14 +294,13 @@ h2{
     color: #fff;
     background-color: #1D1F2E;
     padding:5px 30px ;
+
 }
+/* container_love */
 
 
 
-
-
-
-
+/* becgraun */
 .text_behin{
     line-height: 300px;
 }
@@ -264,7 +310,7 @@ h2{
     background-image: url("../img/coffe.svg");
   
 }
-.content__mags{
+.content_mags5{
     text-align: center;
     font-family: 'Karla';
     font-size: 12px;
@@ -274,6 +320,8 @@ h2{
     padding: 100px;
     
 }
+/* /becgraun */
+
 
 /* colums */
 .colums{
