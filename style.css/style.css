@@ -11,13 +11,19 @@ html,body{
     margin: 0;
     padding: 0;
 }
-header{
+
+.header{
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
     width: 100%;
-    height: 50px;
+    height: 38px;
     box-shadow:0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    position: sticky;
+    
 }
+
 .container_header{
     display:flex;
     justify-content:space-between;
@@ -29,14 +35,49 @@ header{
     display: inline-block;
     vertical-align: middle;
 }
-.navbar__wrap li {
+.navbar__wrap {
     margin-right: 25px;
     display: inline-block;
     vertical-align: middle;
-    
 }
 
-.navbar__wrap a {
+.navbar__menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navbar__menu>li{
+    margin-left: 15px;
+
+}
+.navbar__menu>li:first-child{
+    margin-left: 0;
+}
+.navbar__menu>li>a{
+    text-decoration:none;
+    transition-property: color , font-size, border-bottom;
+    text-decoration: 1s,.2s;
+    transition-timing-function: ease , ease-in-out ,ease;
+
+    color: #000;
+    border-bottom: #000;
+}
+
+.navbar__menu>li>a:hover{
+    color:#0000FF;
+    font-size: 20px;
+    border-bottom:2px solid #0000FF;
+}
+
+.navbar__menu>li>a:active{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all .2s ease;
+}
+
+
+.navbar__wrap>a {
     vertical-align: middle;
     font-family:karla ;
     font-size: 12px;
@@ -50,9 +91,9 @@ header{
     padding-right: 40px;
 }
 
-.navbar__wrap a:hover{
+/* .navbar__wrap a:hover{
     color: #0039f4;
-}
+} */
 
 .logo{
     vertical-align: middle;
@@ -79,25 +120,48 @@ padding-top:100px;
 
 
 .content_buy{
+    font-family: 'Karla';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
     color: #fff;
     padding: 10px;
+  
 }
 h1{
     color: #fff;
     padding: 10px;
 }
 .content_design{
+    font-family: 'Karla';
+    font-size: 17px;
     color: #fff;
     padding: 10px;
 }
-.button{
+.button_1{
     color: black;
     background-color: #fff;
     margin-top: 20px;
     padding:5px 55px ;
-    /* border-radius: 1%; */
-    
+    border-radius: 0px;
+    border: 1px solid #ada8a8;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function:ease;
 }
+
+.button_1:hover{
+    padding: 5px 60px;
+    background-color: #617cf9;
+}
+
+/* .button_1:hover{
+    top:2px ;
+    box-shadow: 0 3px 0px #3c354a;
+    background-color: rgb(166, 220, 230);
+    
+} */
 /*  /page 1*/
 
 .text-items{
@@ -108,8 +172,6 @@ h1{
 
 .content_text{
     font-family: 'Karla';
-    font-style: normal;
-    font-weight: 400;
     font-size: 28px;
     line-height: 40px;
 }
@@ -121,13 +183,28 @@ h1{
     line-height: 28px;
 }
 
-.button_read{
+.button_2{
     font-family: 'Karla';
     margin-top: 21px;
-    padding:1px 10px ;
-    color: red;
-    box-shadow: rgba(255, 0, 0, 0.5);
+    padding:1px 15px ;
+    color:#A25F4B;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    border: 1px solid #ada8a8;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function:ease;
 }
+
+.button_2:hover{
+    padding: 2px 40px;
+    background-color: #6C6CFF;
+}
+
+
 
 .content_mags1{
     text-align: center;
@@ -146,8 +223,22 @@ h1{
 }
 
 .gallery__item{
+    
     padding: 0px 5px;
     flex: 0 1 25%;
+}
+
+.page_22{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    }
+    
+.page_22:hover{
+    
+    padding: 10px ;
+    background-color: #FCCFFF;
 }
 
 .name__gallery{
@@ -169,6 +260,7 @@ h1{
     color: rgba(29, 31, 46, 0.7);
 }
 
+
 /* /page3 */
 
 .gallery__items{
@@ -181,11 +273,26 @@ h1{
 
 }
 
+
 .gallery_itemss{
     display: flex;
     padding: 0px 5px;
     flex: 0 1 25%;
     flex-direction: column; 
+     
+}
+.gallery_1{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+.gallery_1:hover{
+
+    padding: 10px ;
+    background-color: #6C6CFF;
+
 }
 
 .name_gallery{
@@ -287,7 +394,7 @@ h2{
 }
 
 
-.Start__Shopping{
+.button_3{
     font-family: 'Karla';
     margin-top: 21px;
     padding:1px 10px ;
@@ -339,11 +446,11 @@ h2{
    
 .text{
     display: flex;
- font-family: 'Karla';
-font-size: 20px;
-line-height: 32px;
-color: #1D1F2E;
-flex:1 1 auto ;
+    font-family: 'Karla';
+    font-size: 20px;
+    line-height: 32px;
+    color: #1D1F2E;
+    flex:1 1 auto ;
 }
 
 .min-text{
@@ -365,6 +472,19 @@ flex:1 1 auto ;
     color: #1D1F2E;
     padding-top: 10px;
 } 
+
+.list_1{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+}
+
+
+.list_1:hover{
+padding: 10px 10px;
+background-color: #6C6CFF;
+}
 /* /colums */
 
 
@@ -426,6 +546,7 @@ h3{
     display: flex;
     flex-grow: 2px;
 }
+
 .footer_btnn{
     display: flex;
     flex-grow: 2px;
@@ -473,17 +594,50 @@ h3{
     color: #1D1F2E;
     /* line-height: 50px; */
 }
+
+.footer-item{
+    flex: 1 1 auto;
+}
+
+
+
+.footer-column{
+    display: flex;
+    max-width: 990px;
+    margin: 0px auto;
+    flex-direction: column;
+}
 .footer-list-list-reset{
     display: flex;
     padding: 0px 22.5px;
     flex: 0 1 33.333%;
-    flex-direction: column;
-   
+    flex-direction: column;  
 }
 
-.footer-item{
+.footer-list-list-reset>li:first-child{
+    margin-left: 0;
+}
+.footer-list-list-reset>li>a{
+    text-decoration:none;
+    transition-property: color , font-size, border-bottom;
+    text-decoration: 1s,.2s;
+    transition-timing-function: ease , ease-in-out ,ease;
+    border-bottom: #000;
+    font-size: 16px;
     flex: 1 1 auto;
-    /* padding-right: 55px; */
+    vertical-align: middle;
+}
+
+.footer-list-list-reset>li>a:hover{
+    color:#0000FF;
+    font-size: 20px;
+    border-bottom:2px solid #0000FF;
+}
+
+.footer-list-list-reset>li>a:active{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all .2s ease;
 }
 
 .footer-link{
@@ -492,34 +646,6 @@ h3{
     line-height: 22px;
     color: rgba(29, 31, 46, 0.7);
 }
-
-.copyright{
-    display: flex;
-    font-family: 'Karla';
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #1D1F2E;
-    /* padding-top: 55px; */
-}
-
-.footer-column{
-    display: flex;
-    max-width: 990px;
-    margin: 0px auto;
-    flex-direction: column;
-}
-
-.footer-list-list-reset{
-    display: inline-block;
-    font-size: 16px;
-    text-decoration: none;
-    flex: 1 1 auto;
-    vertical-align: middle;
-    color: black;
-}
-
 .copyright_polo{
     display: flex;
     font-family: 'Karla';
@@ -531,6 +657,15 @@ h3{
     padding-top: 55px;
 }
 
+.copyright{
+    display: flex;
+    font-family: 'Karla';
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1D1F2E;
+}
 .footer-text{
     font-family: 'Karla';
 font-size: 12px;
@@ -551,6 +686,7 @@ font-size: 12px;
 text-transform: uppercase;
 color: #4a4545;
 padding-bottom: 20px;
+margin-left: 20px;
 }
 
 .footer-mail{
@@ -565,6 +701,7 @@ text-decoration: none;
 
 .footer-logo{
     padding-bottom: 10px;
+    
 }
 
 
@@ -575,4 +712,16 @@ ul {list-style: none;}
     font-size: 16px;
     line-height: 25px;
     text-decoration: none;
+}
+
+
+@media screen and ( max-width:1024px){
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+
+ 
+   
 }
